@@ -8,6 +8,8 @@ export enum SupportedChainId {
   GOERLI = 5,
   KOVAN = 42,
 
+  UZHETH = 702,
+
   ARBITRUM_ONE = 42161,
   ARBITRUM_RINKEBY = 421611,
   OPTIMISM = 10,
@@ -21,6 +23,8 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.GOERLI,
   SupportedChainId.KOVAN,
 
+  SupportedChainId.UZHETH,
+
   SupportedChainId.ARBITRUM_ONE,
   SupportedChainId.ARBITRUM_RINKEBY,
   SupportedChainId.OPTIMISM,
@@ -33,6 +37,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.RINKEBY,
   SupportedChainId.GOERLI,
   SupportedChainId.KOVAN,
+  SupportedChainId.UZHETH,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
@@ -96,6 +101,12 @@ export const CHAIN_INFO: ChainInfo = {
     explorer: 'https://ropsten.etherscan.io/',
     infoLink: 'https://info.uniswap.org/#/',
     label: 'Ropsten',
+  },
+  [SupportedChainId.UZHETH]: {
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'http://130.60.244.246:8545',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'UZHETH',
   },
   [SupportedChainId.KOVAN]: {
     docs: 'https://docs.uniswap.org/',

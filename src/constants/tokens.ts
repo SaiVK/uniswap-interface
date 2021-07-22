@@ -146,6 +146,13 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
+  [SupportedChainId.UZHETH]: new Token(
+    SupportedChainId.UZHETH,
+    '0x3e18B25d4C1D9d34c6dD271Bf5917ca893F9F130',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
   [SupportedChainId.OPTIMISTIC_KOVAN]: new Token(
     SupportedChainId.OPTIMISTIC_KOVAN,
     '0x4200000000000000000000000000000000000006',
